@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;1,100;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins", serif;
+}
+
+body{
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+.logo{
+    text-decoration: none;
+    color: burlywood;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;  
+}
+
+
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fafcff;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: rgb(252, 252, 252);
+}
+
+.hr{
+    opacity: 10%;
+    color: cornflowerblue;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.5rem;
+    max-width: 900px;
+    position: relative;
+
+}
+
+.design{
+    position: absolute;
+    transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+.hersub {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+h2{  
+    
+    font-size: 2.5rem;
+    color: #fafcff;
+}
+
+h3{
+    font-size: 3rem;
+    color: burlywood;
+}
+
+.contact {
+    
+    background-color: burlywood;
+    color: black;
+    border-radius: 24px; 
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0,5);
+}  
+
+
+.heroimg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heroimg{
+    width: 250px;
+    border-radius: 20px;
+}
+
+.hersub{
+    margin-left: 40px;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem auto;
+    max-width: 900px;
+    gap: 10rem;
+}
+
+.aboutmeimg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutmeimg{
+    width: 250px;
+    border-radius: 20px;
+}
+
+.textcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.texttitle{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.5rem;
+}
+
+.aboutname{
+    color: sandybrown;
+}
+
+span{
+    color: burlywood;
+}
+
+.aboutmepar{
+    text-align: justify;
+    color: rgb(252, 246, 246);
+}
+
+.works {
+    background-image: url("");
+    padding: 10rem 10rem;
+    margin: 5rem 0rem;
+}
+
+.mainimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 900px;
+}
+
+.projecTitle{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+h1{
+    color: blanchedalmond; 
+    font-size: 2rem;
+}
+
+.main li{
+    border-radius: 16px;
+    background-color: rgba(57, 62, 70, 0,5);
+    backdrop-filter: blur(4px);
+    padding: 1rem 4rem;
+
+}
+
+.main li img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.2;
+}
+
+.main  li :hover{
+    transform: scale(1.5);
+}
+
+.works{
+    background-image: url("background.svg");
+    padding: 10rem 10rem;
+    margin: 5rem 0rem;
+}
+
+.contactContainr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+
+}
+
+.contactTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2ram;
+}  
+
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    gap: 20rem;
+}
+
+.contacts h1, .contacts a {
+    color: #fafcff;
+    text-decoration: none;
+}
+
+.emailAndphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem;
+    gap: 6px;
+    
+}
+
+footer{
+    color: floralwhite;
+    padding: 2rem;
+    text-align: center;
+}
+
+.minese{
+    opacity: 5%;
+    color: cornflowerblue;
+
+}
+
+#contact {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  #contact button {
+    padding: 10px 25px;
+    background: orange;
+    border: none;
+    border-radius: 8px;
+    color: blanchedalmond;
+    cursor: pointer;
+  }
+
+
+
+

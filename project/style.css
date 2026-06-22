@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 80px;
+    scroll-behavior: smooth;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+header ul li a{
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header ul li a:hover,
+header ul li a.active{
+    background: black;
+    color: white;
+}
+
+
+
+/* ABOUT SECTION */
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 120px auto;
+    gap: 80px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.hesob{
+    flex: 1;
+}
+
+.hesob h5{
+    font-family: monospace;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.hesob h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.hesob p{
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+/* BUTTON */
+.main-bnt{
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: 0.3s;
+}
+
+.main-bnt:hover{
+    background-color: #000;
+    color: white;
+}
+
+/* HERO IMAGE */
+.heroimg{
+    flex: 1;
+    max-width: 350px;
+    width: 100%;
+}
+
+/* DOWN ARROW */
+.down-arrow{
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+}
+
+/* PRODUCTS */
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3{
+    margin: 10px 0 5px;
+}
+
+.price{
+    color: #e91e63;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 40px;
+  scroll-behavior: smooth;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+   padding-bottom: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  
+
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 13px;
+  color: black;
+  font-family: serif;
+  font-weight: 200;
+}
+
+.price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-cart span {
+  color: red;
+  font-weight: bold;
+}
+
+.price-cart button {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.price-cart button:hover {
+  background: darkblue;
+}
+.checkout-btn{
+  width:100%;
+  padding:12px;
+  margin-top:15px;
+  border:none;
+  border-radius:8px;
+  background:#4f46e5;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.delete-btn{
+  background:red;
+  color:white;
+  border:none;
+  padding:4px 8px;
+  border-radius:5px;
+  cursor:pointer;
+}
+.services{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:50px 20px;
+    background:#f5f5f5;
+    padding-bottom: 30px;
+}
+
+.service-box{
+    width:250px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+    
+}
+
+.service-box:hover{
+    transform:translateY(-10px);
+}
+
+.service-box i{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+#customName{
+    width: 90%;
+    padding: 12px 15px;
+    margin: 15px auto;
+    display: block;
+
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 14px;
+    outline: none;
+    font-family: serif;
+    transition: 0.3s;
+}
+
+#customName:focus{
+    border-color: #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.ismme {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.ismme h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  position: relative;
+}
+
+.ismme h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #3498db;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.ismme p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+.ismme h3{
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #000;
+  position: relative;
+
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.contactTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.contactme{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-right: 5rem;
+    gap: 20rem;
+}
+.contact h3, .contact a {
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+}
+
+.emaliAndphon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: gold;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px){
+
+    .about{
+        flex-direction: column;
+        text-align: center;
+        margin: 100px 20px;
+        gap: 40px;
+    }
+
+    .hesob h1{
+        font-size: 42px;
+    }
+
+    .heroimg{
+        max-width: 280px;
+    }
+
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* PHONE */
+@media (max-width: 1023px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    header ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about{
+        margin: 60px 15px;
+    }
+
+    .hesob h5{
+        font-size: 16px;
+    }
+
+    .hesob h1{
+        font-size: 30px;
+    }
+
+    .hesob p{
+        font-size: 15px;
+    }
+
+    .heroimg{
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .products{
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .price-cart{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .price-cart button{
+        width: 100%;
+    }
+
+    .contact{
+        padding:30px 10px;
+    }
+
+    .contact h2{
+        font-size:26px;
+    }
+
+    .contact p{
+        font-size:15px;
+    }
+
+    img{
+    max-width: 100%;
+    height: auto;
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body> 
+    <button onclick="toggleCart()" class="cart-btn">
+    Confirm Order🛒 <span id="count">0</span>
+</button>
+    <header>
+        <img src="fba3.jpg" class="logo">
+        <ul>
+            <li><a href="#sirves">sirves</a></li>
+            <li><a href="#main-bnt">Collection</a></li>
+            <li><a href="#contacme">contact</a></li>
+        </ul>
+        <a href="card.html" class="cart-btn">
+  🛒 Cart (<span id="cart-count">0</span>)</a>
+        
+
+    </header>
+
+    <hr />
+
+    <section class="about" id="sirves">
+        <div class="hesob">
+            <h5>winter collection</h5>
+            <h1>New winter <br> collection 2026</h1>
+            <p>there's nothing like trend</p>
+
+            <a href="#main-bnt" class="main-bnt">shop now <i class="bx bx-cart-alt" ></i></a>
+        </div>
+        <img src="fba3.jpg" alt="design" class="heroimg">
+
+        <div class="down-arrow">
+            <a href="#trending" class="down"><i class="bx bx-arrow-down-stroke" ></i></a>
+        </div>
+    </section>
+    
+<hr>
+
+
+<section class="products" id="main-bnt">
+
+  <div class="card">
+    <img src="fba.jpg" alt="">
+    <h3>Product Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="price-cart">
+      <span>$100</span>
+      <button onclick="addToCart('Product Title', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="fba2.jpg" alt="">
+    <h3>Product Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="price-cart">
+      <span>$100</span>
+      <button onclick="addToCart('Product Title', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images/imgs1.jpeg" alt="">
+    <h3>Product Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="price-cart">
+      <span>$100</span>
+      <button onclick="addToCart('Product Title', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images/imgs2.jpeg" alt="">
+    <h3>Product Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="price-cart">
+      <span>$100</span>
+      <button onclick="addToCart('Product Title', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+   <div class="card">
+    <img src="images/imgs3.jpeg" alt="">
+    <h3>Product Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="price-cart">
+      <span>$100</span>
+      <button onclick="addToCart('Product Title', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+   <div class="card">
+    <img src="images/imgs4.jpeg" alt="">
+    <h3>Product Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="price-cart">
+      <span>$100</span>
+      <button onclick="addToCart('Product Title', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+   <div class="card">
+    <img src="images/imgs5.jpeg" alt="">
+    <h3>Product Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="price-cart">
+      <span>$100</span>
+      <button onclick="addToCart('Product Title', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+   <div class="card">
+    <img src="images/imgs6.jpeg" alt="">
+    <h3>Product Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="price-cart">
+      <span>$100</span>
+      <button onclick="addToCart('Product Title', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+</section>
+<hr>
+
+
+
+<section id="contacme" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>📞 +212 773300654</p>
+
+    <p>📧 shop@gmail.com</p>
+
+    <p>📍 Fes, Morocco</p>
+
+</section>
+
+<script>
+
+let cart =
+JSON.parse(localStorage.getItem("cart")) || [];
+
+updateCount();
+
+function addToCart(name, price){
+
+  cart.push({name, price});
+
+  localStorage.setItem(
+    "cart",
+    JSON.stringify(cart)
+  );
+
+  updateCount();
+}
+
+function updateCount(){
+  document.getElementById("cart-count").innerText =
+  cart.length;
+}
+
+</script>
+</body>
+</html>
